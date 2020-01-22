@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dasboard">
+   <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:background="#673AB7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:id="@+id/tv_pulse"
+                    android:layout_toRightOf="@+id/iv_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pulse Changer"
+                    android:textStyle="bold"
+                    android:textSize="21dp"
+                    android:textColor="@android:color/white"
+                    />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_menu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.cardview.widget.CardView
+            android:backgroundTint="#673AB7"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:text="Selamat Datang, Ayogi!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+               <TextView
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/tv_user_name"
+                   android:layout_centerHorizontal="true"
+                   android:textSize="18dp"
+                   android:textStyle="normal"
+                   android:textColor="@android:color/white"
+                   android:text="LOG OUT"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       <LinearLayout
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <Button
+                   android:id="@+id/btn_convert_pulsa"
+                   android:layout_alignParentLeft="true"
+                   android:textColor="@android:color/white"
+                   android:text="Convert Pulsa"
+                   android:background="#673AB7"
+                   android:textSize="16dp"
+                   android:layout_width="140dp"
+                   android:layout_height="80dp"/>
+               <Button
+                   android:id="@+id/btn_edit_profil"
+                   android:layout_alignParentRight="true"
+                   android:textColor="@android:color/white"
+                   android:text="Edit Profil"
+                   android:background="#673AB7"
+                   android:textSize="16dp"
+                   android:layout_width="140dp"
+                   android:layout_height="80dp"/>
+
+           </RelativeLayout>
+            <TextView
+                android:layout_marginTop="50dp"
+                android:text="Rekening Bank Anda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_BNI"
+                    android:src="@drawable/ic_bank"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:id="@+id/tv_bank"
+                    android:text="BNI"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_BNI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/tv_bank"
+                    android:text="08155491861285"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_BNI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="50dp"
+                android:text="Transaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_provider"
+                    android:src="@drawable/ic_provider"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:id="@+id/tv_provider_telkomsel"
+                    android:text="Telkomsel"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_provider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_provider_telkomsel_harga"
+                    android:text="Rp. 69.000"
+                    android:textSize="16dp"
+                    android:textColor="#7614A5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/tv_provider_telkomsel"
+                    android:text="Silakan Konfirmasi"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_provider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+           <RelativeLayout
+
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_provider2"
+                    android:src="@drawable/ic_provider"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:id="@+id/tv_provider_XL"
+                    android:text="XL"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_provider2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_provider_XL_harga"
+                    android:text="Rp. 1.500.000"
+                    android:textSize="16dp"
+                    android:textColor="#7614A5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/tv_provider_XL"
+                    android:text="Selesai"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_provider2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+       </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>
