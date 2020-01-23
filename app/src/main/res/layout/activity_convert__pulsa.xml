@@ -89,6 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <RadioGroup
+                    android:id="@+id/rg_pulsa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <RelativeLayout
@@ -140,7 +141,7 @@
                             android:layout_alignParentRight="true"
                             android:textColor="@android:color/black"
                             android:textSize="20dp"
-                            android:text="(Rate 0.75)"
+                            android:text="(Rate 0.5)"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                     </RelativeLayout>
@@ -177,6 +178,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <EditText
+                    android:id="@+id/edt_nilai_pulsa"
                     android:hint="Masukan Jumlah Pulsa"
                     android:textSize="20dp"
                     android:drawableLeft="@drawable/ic_provider"
@@ -191,6 +193,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <TextView
+                    android:id="@+id/tv_hasil"
                     android:layout_marginTop="10dp"
                     android:textColor="#673AB7"
                     android:text="Rp. 51.750"
@@ -199,6 +202,7 @@
                     android:layout_height="wrap_content"/>
 
                 <Button
+                    android:id="@+id/btn_komfirmasi"
                     android:layout_marginTop="50dp"
                     android:layout_marginLeft="60dp"
                     android:layout_marginRight="60dp"
